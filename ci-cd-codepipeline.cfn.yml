@@ -8,11 +8,7 @@ Parameters:
 
   EksClusterName:
     Type: String
-<<<<<<< HEAD
-    Description: The name of the EKS cluster created
-=======
     Description: EKS Cluster Name
->>>>>>> 7b5c2898285e53b0795b50f67e377727cf42153a
     Default: simple-jwt-api
     MinLength: 1
     MaxLength: 100
@@ -20,11 +16,7 @@ Parameters:
 
   GitSourceRepo:
     Type: String
-<<<<<<< HEAD
     Description: GitHub source repository - must contain a Dockerfile and buildspec.yml in the base
-=======
-    Description: GitHub Source Repo
->>>>>>> 7b5c2898285e53b0795b50f67e377727cf42153a
     Default: FSND-Deploy-Flask-App-to-Kubernetes-Using-EKS
     MinLength: 1
     MaxLength: 100
@@ -49,11 +41,7 @@ Parameters:
   GitHubUser:
     Type: String
     Default: mayurk-amdocs
-<<<<<<< HEAD
     Description: GitHub username or organization
-=======
-    Description: GitHub User Name
->>>>>>> 7b5c2898285e53b0795b50f67e377727cf42153a
     MinLength: 3
     MaxLength: 100
     ConstraintDescription: You must enter a GitHub username or organization
@@ -72,7 +60,6 @@ Parameters:
 <<<<<<< HEAD
     Description: IAM role used by kubectl to interact with EKS cluster
 =======
-    Description: Role Name
 >>>>>>> 7b5c2898285e53b0795b50f67e377727cf42153a
     MinLength: 3
     MaxLength: 100
