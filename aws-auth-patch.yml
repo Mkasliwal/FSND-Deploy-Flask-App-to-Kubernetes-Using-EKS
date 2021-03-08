@@ -4,23 +4,39 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
+<<<<<<< HEAD
       rolearn: arn:aws:iam::417747745715:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-HVRTKF9YFQ22
+=======
+      rolearn: arn:aws:iam::417747745715:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-11QYG1R2WFRAR
+>>>>>>> 7b5c2898285e53b0795b50f67e377727cf42153a
       username: system:node:{{EC2PrivateDNSName}}
     - groups:
       - system:masters
       rolearn: arn:aws:iam::417747745715:role/UdacityFlaskDeployCBKubectlRole
+<<<<<<< HEAD
       username: build
+=======
+      username: Udacity
+>>>>>>> 7b5c2898285e53b0795b50f67e377727cf42153a
   mapUsers: |
     []
 kind: ConfigMap
 metadata:
+<<<<<<< HEAD
   creationTimestamp: "2021-03-08T11:28:05Z"
+=======
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","data":{"mapRoles":"- groups:\n  - system:bootstrappers\n  - system:nodes\n  - system:masters\n  rolearn: arn:aws:iam::417747745715:role/UdacityFlaskDeployCBKubectlRole\n  username: Udacity\t\n","mapUsers":"[]\n"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2021-02-19T05:28:03Z","name":"aws-auth","namespace":"kube-system","resourceVersion":"1381","selfLink":"/api/v1/namespaces/kube-system/configmaps/aws-auth","uid":"2dce6711-9d73-4a21-b895-69329960c7d8"}}
+  creationTimestamp: "2021-02-19T05:28:03Z"
+>>>>>>> 7b5c2898285e53b0795b50f67e377727cf42153a
   managedFields:
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
       f:data:
         .: {}
+<<<<<<< HEAD
         f:mapRoles: {}
         f:mapUsers: {}
     manager: eksctl.exe
@@ -31,3 +47,26 @@ metadata:
   resourceVersion: "1374"
   selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
   uid: 9c32f6c4-5726-41ca-aaab-ee9b3d8c24c8
+=======
+        f:mapUsers: {}
+    manager: eksctl.exe
+    operation: Update
+    time: "2021-02-19T05:28:03Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:data:
+        f:mapRoles: {}
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:kubectl.kubernetes.io/last-applied-configuration: {}
+    manager: kubectl-client-side-apply
+    operation: Update
+    time: "2021-02-19T06:16:25Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "9623"
+  selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
+  uid: 2dce6711-9d73-4a21-b895-69329960c7d8
+>>>>>>> 7b5c2898285e53b0795b50f67e377727cf42153a
